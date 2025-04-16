@@ -1,0 +1,44 @@
+{
+    "name": "routing/stratum",
+    "description": "A flexible, elegant, and powerful routing dispatcher package for Laravel.",
+    "keywords": [
+        "laravel",
+        "route",
+        "router",
+        "routing",
+        "single-entry routing",
+        "path-based routing"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/dependencies-packagist/routing-stratum",
+    "authors": [
+        {
+            "name": "jundayw",
+            "email": "jundayw@126.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Routing\\Stratum\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Routing\\Router\\RouterServiceProvider"
+            ],
+            "aliases": {
+                "Router": "Routing\\Router\\Facades\\Router"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
